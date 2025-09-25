@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Trip - Home</title>
+
+  <style>
+  
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height:1.6;
+  color:black;
+}
+
+
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1rem 2rem;
+  background:rgb(18, 17, 18);
+}
+.logo {
+  color:#fc0606;
+  font-size:1.8rem;
+  font-weight:bold;
+}
+.nav-links { list-style:none; display:flex; gap:1.5rem; }
+.nav-links a {
+  color:#45a7e4;
+  text-decoration:none;
+  transition:color .3s;
+}
+.nav-links a:hover,
+.nav-links a.active { color:#3fbbf4; }
+
+
+.hero {
+  background:url("7_wonders.jpg") center no-repeat;
+  height:70vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:#0f1010;
+  padding:0 1rem;
+}
+.hero-content h1 { font-size:3rem; margin-bottom:1rem; text-shadow:0 0 8px #000; }
+.hero-content p { font-size:1.2rem; margin-bottom:2rem; color: #000000;}
+.btn-primary {
+  background:#f253cd;
+  color:#f10808;
+  padding:.8rem 1.6rem;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  transition: .3s;
+}
+.btn-primary:hover { background:#565153; }
+
+
+.featured { padding:3rem 2rem; background:#468fb7; }
+.featured h2 { text-align:center; margin-bottom:2rem; font-size:2rem; }
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:2rem;
+}
+.card {
+  background:#f3eeee;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+  transition:transform .3s;
+}
+.card img { width:100%; height:200px; object-fit:cover; }
+.card h3 { margin:1rem; color:#33c9f2; }
+.card p { margin:0 1rem 1.5rem; }
+.card:hover { transform:translateY(-5px); }
+
+
+footer {
+  background:#06bdf0;
+  color:#0a090a;
+  text-align:center;
+  padding:1rem;
+  margin-top:2rem;
+}
+</style>
+</head>
+<body>
+
+  
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyTrip</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Explore the World with Us</h1>
+        <p>Your journey begins here - discover breathtaking places and unique cultures.</p>
+        <a href="destinations.html" class="btn-primary">Start Exploring</a>
+      </div>
+    </section>
+  </header>
+
+  
+  <main>
+    <section class="featured">
+      <h2>Featured Destinations</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="swit.png" alt="switzerland">
+          <h3>switzerland, Alpine</h3>
+          <p>Alpine villages in Switzerland offer picturesque scenery, traditional architecture, and a tranquil way of life, often featuring traffic-free environments and access to stunning natural beauty.</p>
+        </div>
+        <div class="card">
+          <img src="canada.png" alt="canada">
+          <h3>canada,Ottawa </h3>
+          <p>The city is home to national museums, renowned art galleries and impressive annual festivals.</p>
+        </div>
+        <div class="card">
+          <img src="nether.png" alt="New York">
+          <h3>netherland,Amsterdam </h3>
+          <p>Amsterdam is an eclectic blend of old-world charm and modern, liberal ideas. The city is known for its many famous art museums and historical buildings as well as for its night clubs and its red-light district.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2025 MyTrip. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+           
